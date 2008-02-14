@@ -1,7 +1,7 @@
 
 %define realname   POE-Component-Client-Keepalive
 %define version    0.1000
-%define release    %mkrel 3
+%define release    %mkrel 4
 
 Name:       perl-%{realname}
 Version:    %{version}
