@@ -8,7 +8,7 @@ Version:    %{version}
 Release:    %{release}
 License:    GPL or Artistic
 Group:      Development/Perl
-Summary:    a wheel wrapper around a
+Summary:    A wheel wrapper around a kept-alive socket
 Source:     http://www.cpan.org/modules/by-module/POE/%{realname}-%{version}.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
