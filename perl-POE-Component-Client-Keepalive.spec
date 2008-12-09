@@ -1,14 +1,15 @@
 
 %define realname   POE-Component-Client-Keepalive
-%define version    0.1001
-%define release    %mkrel 2
+%define version    0.24
+%define release    %mkrel 1
 
 Name:       perl-%{realname}
 Version:    %{version}
 Release:    %{release}
+Epoch:      1
 License:    GPL or Artistic
 Group:      Development/Perl
-Summary:    A wheel wrapper around a kept-alive socket
+Summary:    Manage connections, with keep-alive
 Source:     http://www.cpan.org/modules/by-module/POE/%{realname}-%{version}.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -19,17 +20,11 @@ BuildRequires: perl(POE::Component::Client::DNS)
 BuildArch: noarch
 
 %description
-POE::Component::Connection::Keepalive is a helper class for
-POE::Component::Client::Keepalive.  It wraps managed sockets,
-providing a few extra features.
-
-Connection objects free their underlying sockets when they are
-DESTROYed.  This eliminates the need to explicitly free sockets when
-you are done with them.
-
-Connection objects manage POE::Wheel::ReadWrite objects internally,
-saving a bit of effort.
-
+POE::Component::Client::Keepalive creates and manages connections for
+other components. It maintains a cache of kept-alive connections for
+quick reuse. It is written specifically for clients that can benefit
+from kept-alive connections, such as HTTP clients. Using it for one-shot
+connections would probably be silly.
 
 
 %prep
