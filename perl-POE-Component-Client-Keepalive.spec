@@ -1,5 +1,5 @@
 %define upstream_name    POE-Component-Client-Keepalive
-%define upstream_version 0.25
+%define upstream_version 0.260
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -24,7 +24,6 @@ quick reuse. It is written specifically for clients that can benefit
 from kept-alive connections, such as HTTP clients. Using it for one-shot
 connections would probably be silly.
 
-
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
 
@@ -47,4 +46,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES META.yml README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
