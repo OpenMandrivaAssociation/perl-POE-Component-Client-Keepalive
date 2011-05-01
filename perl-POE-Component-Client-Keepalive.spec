@@ -1,9 +1,9 @@
 %define upstream_name    POE-Component-Client-Keepalive
-%define upstream_version 0.263
+%define upstream_version 0.266
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 Epoch:      1
 
 Summary:    Manage connections, with keep-alive
@@ -15,6 +15,7 @@ Source0:    http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstrea
 BuildRequires: perl(Net::IP)
 BuildRequires: perl(POE)
 BuildRequires: perl(POE::Component::Client::DNS)
+BuildRequires: perl(POE::Component::Resolver)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
