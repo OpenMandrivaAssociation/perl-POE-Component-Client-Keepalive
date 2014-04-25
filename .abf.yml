@@ -1,2 +1,4 @@
+removed_sources:
+  POE-Component-Client-Keepalive-0.266.tar.gz: 64c0fd94fa56964089e4835c94d908c52a563a6d
 sources:
-  "POE-Component-Client-Keepalive-0.266.tar.gz": 64c0fd94fa56964089e4835c94d908c52a563a6d
+  POE-Component-Client-Keepalive-0.271.tar.gz: c9deb435077a4ff9afdc95d4c6a6d5053c1b2e50
