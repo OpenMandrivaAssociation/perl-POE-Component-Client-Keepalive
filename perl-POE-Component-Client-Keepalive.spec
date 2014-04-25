@@ -14,6 +14,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Net::IP::Minimal)
 BuildRequires:	perl(Net::IP)
 BuildRequires:	perl(POE)
 BuildRequires:	perl(POE::Component::Client::DNS)
