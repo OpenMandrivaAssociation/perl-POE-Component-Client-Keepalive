@@ -1,16 +1,16 @@
 %define upstream_name    POE-Component-Client-Keepalive
-%define upstream_version 0.266
+%define upstream_version 0.272
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 Epoch:		1
 
 Summary:	Manage connections, with keep-alive
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/rcaputo/poe-component-client-keepalive
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCAPUTO/POE-Component-Client-Keepalive-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
