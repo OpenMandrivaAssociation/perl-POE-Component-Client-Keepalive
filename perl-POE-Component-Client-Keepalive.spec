@@ -1,16 +1,14 @@
 %define upstream_name    POE-Component-Client-Keepalive
-%define upstream_version 0.272
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.272
+Release:	2
 Epoch:		1
 
 Summary:	Manage connections, with keep-alive
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rcaputo/poe-component-client-keepalive
-Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCAPUTO/POE-Component-Client-Keepalive-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCAPUTO/POE-Component-Client-Keepalive-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ from kept-alive connections, such as HTTP clients. Using it for one-shot
 connections would probably be silly.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -70,8 +68,7 @@ make test
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1:0.250.0-1mdv2010.0
 + Revision: 401614
-- rebuild using %%perl_convert_version
-- fixed license field
+- rebuild using %0.272 fixed license field
 
 * Sun Dec 14 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1:0.25-1mdv2009.1
 + Revision: 314257
